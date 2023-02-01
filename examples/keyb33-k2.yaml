@@ -1,0 +1,44 @@
+orientation: clockwise
+rows: 3
+columns: 3
+knobs: 2
+
+# Simple actions for reprogram with something better
+layers:
+  # Layer 1: Numbers, basic wheals
+  - buttons:
+      - ["1", "2", "3"]
+      - ["4", "5", "6"]
+      - ["7", "8", "9"]
+    knobs:
+      - ccw: 'volumedown'
+        press: 'mute'
+        cw: 'volumeup'
+      - ccw: 'wheelup'
+        press: 'click'
+        cw: 'wheeldown'
+  # Layer 2: Chars
+  - buttons:
+      - ["a", "b", "c"]
+      - ["d", "e", "f"]
+      - ["g", "h", "k"]
+    knobs:
+      - ccw: 'prev'
+        press: 'play'
+        cw: 'next'
+      - ccw: 'pageup'
+        press: 'enter'
+        cw: 'pagedown'
+
+  # Layer 3: Functions
+  - buttons:
+      - ["f1", "f2", "f3"]
+      - ["f4", "f5", "f5"]
+      - ["f6", "f7", "f9"]
+    knobs:
+      - ccw: 'f10'
+        press: 'f11'
+        cw: 'f12'
+      - ccw: 'insert'
+        press: 'home'
+        cw: 'delete'
